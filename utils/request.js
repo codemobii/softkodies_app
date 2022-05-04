@@ -17,8 +17,6 @@ export default class Request {
         },
       });
 
-      console.log("done", res?.data);
-
       if (!res?.data?.error) {
         message && new Toast().success(message);
         return { data: res.data, error: false };
